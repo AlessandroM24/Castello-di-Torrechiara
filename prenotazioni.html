@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="titolo">Il castello di Torrechiara</h1>
+    </div>
+
+    <div id="divSinistro">
+        <ul class="opzioni">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parco.html">Il parco</a></li>
+            <li><a href="prenotazioni.html">Prenota</a></li>
+        </ul>
+    </div>
+
+    <div id="divDestro"></div>
+
+    <div id="divCentrale">
+        <h1 class="titoloMain" style="text-align: center; margin-bottom: 3%;">Prenota il biglietto</h1>
+
+        <form>
+            <div class="form">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="cognome">Cognome</label>
+                <input type="text" name="cognome" id="cognome">
+                <br>
+                <label for="sesso">Sesso</label>
+                <select name="sesso" id="sesso">
+                    <option value="">Scegli</option>
+                    <option value="maschio">Maschio</option>
+                    <option value="femmina">Femmina</option>
+                </select>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="telefono">Recapito telefonico</label>
+                <input type="tel" name="telefono" id="telefono">
+                <br>
+                <label for="citta">Città di residenza</label>
+                <input type="text" name="citta" id="citta">
+                <br>
+            </div>
+
+            <div class="form" style="height: 80px;">
+                <label for="biglietto">Tipologia di biglietto</label>
+                <select name="biglietto" id="biglietto">
+                    <option value="">Scegli un biglietto</option>
+                    <option value="giorantaIntera">Giornata intera</option>
+                    <option value="mezzaGiornata">Mezza giornata</option>
+                </select>
+                <label for="quantitaBiglietti">Quantià di biglietti (max 10)</label>
+                <input type="number" name="quantitaBiglietti" id="quantitaBiglietti" min="1" max="10">
+                <label for="data">Data evento</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div class="form">
+                <h3>Altre opzioni</h3>
+                <input type="checkbox" name="guide" class="inputAltreOpzioni">
+                <label for="guide">Guida personale (7.00€)</label>
+                <br>
+                <input type="checkbox" name="guide" class="inputAltreOpzioni">
+                <label for="guide">Guida di gruppo (12.00€)</label>
+                <br>
+                <input type="checkbox" name="guide" class="inputAltreOpzioni">
+                <label for="guide">AudioGuida (17.00€)</label>
+
+                <h4>Ritiro biglietti</h4>
+                <input type="radio" name="ritiro" class="inputAltreOpzioni">
+                <label for="ritiro">Presso biglietteria</label>
+                <br>
+                <input type="radio" name="ritiro" class="inputAltreOpzioni">
+                <label for="ritiro">Spedizione con corriere</label>
+            </div>
+
+            <div class="form" style="height: 200px;">
+                <label for="commento">Commento</label>
+                <br>
+                <textarea name="commento" cols="50" rows="8"></textarea>
+                <br>
+                <input type="submit" value="Invia" class="bottoni">
+                <input type="reset" value="Cancella" class="bottoni">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p class="testoFooter">Sito web "il castello di Torrechiara"</p>
+        <p class="testoFooter">Esercizio di preparazione alla verifica</p>
+        <p class="testoFooter">M. Alessandro - 3^C - 16/05/2023</p>
+    </div>
+
+</body>
+
+</html>
